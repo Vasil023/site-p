@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div>
+      <NavBar />
+    </div>
+    <router-view />
+    <TheFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import emailjs from "@emailjs/browser";
+import NavBar from "@/components/NavBar.vue";
+import TheFooter from "@/components/TheFooter.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  components: { NavBar, TheFooter },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  methods: {
+    sendEmail() {
+      emailjs.sendForm("service_tj0w17k", "template_snasdo4", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    },
+  },
+};
+</script>
