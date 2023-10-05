@@ -45,12 +45,18 @@ export default {};
   padding: 80px 0;
 
   p {
-    font-size: rem(32);
-    line-height: rem(44);
+    font-size: 32px;
+    line-height: 44px;
   }
 
   &-top {
     text-align: center;
+
+    h2 {
+      width: 768px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+    }
   }
 
   @include phone {
@@ -69,13 +75,13 @@ export default {};
     max-width: 180px;
 
     p {
-      font-size: rem(24);
+      font-size: 24px;
       font-weight: 700;
       line-height: 30px;
       margin-top: 16px;
 
       @include phone {
-        font-size: rem(16);
+        font-size: 16px;
       }
     }
 

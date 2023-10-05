@@ -1,209 +1,34 @@
 <template>
-  <div class="swiper-reviews">
+  <div class="swiper-reviews swiper-overflow-container">
     <div class="container">
-      <div class="title">Ce que nos clients disent de nous</div>
+      <div class="title">Avis de nos clients</div>
+
+      <swiper
+        :slidesPerView="'auto'"
+        :spaceBetween="30"
+        :freeMode="true"
+        :navigation="true"
+        :modules="modules"
+        class="mySwiper swiper-propertis swiper-container"
+      >
+        <swiper-slide v-for="i in 9" :key="i">
+          <div class="slide-top">
+            <div>
+              <p>L’Oréal Paris</p>
+              <span>Wilmer Alexander Directeur financier</span>
+            </div>
+          </div>
+
+          <div class="slide-title">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt, explicabo.
+            </p>
+          </div>
+        </swiper-slide>
+      </swiper>
     </div>
-    <swiper
-      :slidesPerView="'auto'"
-      :spaceBetween="30"
-      :freeMode="true"
-      :centeredSlides="true"
-      :navigation="true"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="slide-top">
-          <div>
-            <img src="@/assets/img/avatar.png" alt="avatar" />
-          </div>
-          <div>
-            <p>L’Oréal Paris</p>
-            <span>Wilmer Alexander Directeur financier</span>
-          </div>
-        </div>
-
-        <div class="slide-title">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo.
-          </p>
-        </div>
-      </swiper-slide>
-    </swiper>
   </div>
 </template>
 <script>
@@ -233,18 +58,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.swiper-overflow-container {
+  overflow-x: hidden;
+
+  .container {
+    overflow: visible;
+    position: relative;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+}
+
 .swiper-reviews {
   background: #eae6f4;
+  padding: 60px 0 0 0;
 }
 .swiper {
   width: 100%;
   height: 100%;
-  padding: 100px 0;
+  padding: 60px 0px 100px 0px;
 }
 
 :deep(.swiper-button-next) {
-  right: 925px !important;
-  top: 460px;
+  right: 613px !important;
+  top: 430px;
   color: #13023e;
 
   &::after {
@@ -253,8 +92,8 @@ export default {
 }
 
 :deep(.swiper-button-prev) {
-  left: 925px !important;
-  top: 460px;
+  left: 625px !important;
+  top: 430px;
   color: #13023e;
 
   &::after {
@@ -265,10 +104,13 @@ export default {
 .slide-reviews {
   background: #eae6f4;
   padding: 60px 0 0 0;
+}
 
-  .title {
-    margin-bottom: 60px;
-  }
+.title {
+  // margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .swiper-overflow-container {

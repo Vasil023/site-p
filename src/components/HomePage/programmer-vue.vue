@@ -4,7 +4,8 @@
       <div class="container">
         <div class="_border">
           <div class="title">
-            PROGRAMMER 15 min de rendez-vous EN LIGNE avec nous et obtenez les réponses à toutes vos questions
+            <strong>PROGRAMMER</strong> 15 min de rendez-vous <strong>EN LIGNE</strong> avec nous et obtenez
+            les réponses à toutes vos questions
           </div>
           <a href="#" class="btn-yellow">Prendre un rendez-vous</a>
         </div>
@@ -22,7 +23,7 @@ export default {};
 @import "@/assets/mixin.scss";
 
 .programmer {
-  margin: 180px 0;
+  padding: 180px 0;
 
   @include phone {
     margin: 80px 0;
@@ -50,7 +51,7 @@ export default {};
 }
 
 .title {
-  font-size: rem(36);
+  font-size: 36px;
   font-weight: 500;
   line-height: 60px;
 }

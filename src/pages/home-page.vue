@@ -5,7 +5,10 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="first-screen-content col-xl-11">
-          <h1 class="heading-title">Déléguez vos pré-relances et vos relances de factures impayées</h1>
+          <h1 class="heading-title">
+            Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches À
+            valeur ajoutée
+          </h1>
           <p>
             Faites-vous payer en phase amiable en 60 jours jusqu’à 90% de vos factures impayées grâce à
             GAYSSOT RECOUVREMENT
@@ -89,12 +92,9 @@
     <!-- reviewsSlider -->
     <reviewsSlider />
 
-    <!-- videoSlider -->
-    <videoSlider />
-
     <!-- Vous -->
     <section>
-      <div class="programmer">
+      <div class="programmer-two">
         <div class="container">
           <div class="_border vous">
             <div class="heading">Vous avez une question?</div>
@@ -111,6 +111,9 @@
         </div>
       </div>
     </section>
+
+    <!-- socialMedia -->
+    <socialMedia />
   </main>
 </template>
 
@@ -120,10 +123,17 @@ import recevezVue from "@/components/HomePage/recevez-vue.vue";
 import recomendationVue from "@/components/HomePage/recomendation-vue.vue";
 import programmerVue from "@/components/HomePage/programmer-vue.vue";
 import reviewsSlider from "@/components/HomePage/reviews-slider.vue";
-import videoSlider from "@/components/HomePage/video-slider.vue";
+import socialMedia from "@/components/HomePage/social-media.vue";
 
 export default {
-  components: { avantegesVue, recevezVue, recomendationVue, programmerVue, reviewsSlider, videoSlider },
+  components: {
+    avantegesVue,
+    recevezVue,
+    recomendationVue,
+    programmerVue,
+    reviewsSlider,
+    socialMedia,
+  },
 };
 </script>
 
@@ -136,8 +146,9 @@ export default {
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: calc(100vh - 93px);
+  height: calc(100vh - 63px);
   min-height: 600px;
   position: relative;
   display: flex;
@@ -160,12 +171,18 @@ export default {
   }
 
   h1 {
-    color: $white;
+    color: #fff;
+    font-size: 56px !important;
+    font-weight: 700 !important;
+    line-height: 84px !important;
   }
 
   p {
     color: $white;
-    font-size: 36;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-top: 25px;
   }
 
   a {
@@ -180,7 +197,7 @@ export default {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.5;
+  opacity: 0.63;
   z-index: 1;
 }
 
@@ -248,5 +265,29 @@ export default {
     text-transform: uppercase;
     margin-top: 16px;
   }
+}
+
+._border {
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #3a0987;
+  padding: 67px 35px 67px 35px;
+  text-align: center;
+
+  .btn-yellow {
+    margin-top: 60px;
+  }
+
+  @include phone {
+    padding: 47px 16px 47px 16px;
+
+    .btn-yellow {
+      margin-top: 30px;
+    }
+  }
+}
+
+.programmer-two {
+  padding: 60px 0;
 }
 </style>

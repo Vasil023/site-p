@@ -70,7 +70,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/variables.scss";
 
 footer {
@@ -82,6 +82,7 @@ footer {
   }
 
   ul {
+    padding-left: 0 !important;
     li {
       margin-top: 24px;
     }

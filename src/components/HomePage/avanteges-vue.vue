@@ -6,7 +6,7 @@
           <img class="avanteges-img" src="@/assets/img/2.png" alt="" />
         </div>
         <div class="col-xl-6 col-lg-7 col-md-12 pt-4">
-          <h2>Les AVANTAGES de GAYSSOT Recouvrement</h2>
+          <h3>Les AVANTAGES de GAYSSOT Recouvrement</h3>
 
           <ul class="avanteges-items">
             <li class="avanteges-item">
@@ -207,7 +207,7 @@ export default {
 @import "@/assets/variables.scss";
 @import "@/assets/mixin.scss";
 
-h2 {
+h3 {
   font-size: 44px;
   font-weight: 600;
 }

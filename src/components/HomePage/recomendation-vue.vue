@@ -75,6 +75,12 @@ export default {};
 <style lang="scss" scoped>
 @import "@/assets/variables.scss";
 @import "@/assets/mixin.scss";
+
+.heading {
+  width: 995px;
+  font-size: 40px;
+  margin: 0 auto;
+}
 .recomendation {
   background: #eae6f4;
   padding: 57px 0;
@@ -99,7 +105,7 @@ export default {};
   }
 
   span {
-    font-size: rem(22);
+    font-size: 22px;
     font-weight: 500;
   }
 }
