@@ -210,6 +210,10 @@ export default {
 h3 {
   font-size: 44px;
   font-weight: 600;
+
+  @include phone {
+    font-size: 35px;
+  }
 }
 
 ul {

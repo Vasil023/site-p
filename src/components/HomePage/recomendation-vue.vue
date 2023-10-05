@@ -80,6 +80,11 @@ export default {};
   width: 995px;
   font-size: 40px;
   margin: 0 auto;
+
+  @include tablet-up {
+    width: 100%;
+    font-size: 30px;
+  }
 }
 .recomendation {
   background: #eae6f4;

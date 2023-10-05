@@ -59,8 +59,16 @@ export default {};
     }
   }
 
-  @include phone {
+  @include tablet-up {
     margin-top: 30px;
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      font-size: 28px;
+    }
   }
 }
 

@@ -26,7 +26,7 @@ export default {};
   padding: 180px 0;
 
   @include phone {
-    margin: 80px 0;
+    padding: 80px 0;
   }
 }
 

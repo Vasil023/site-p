@@ -2,7 +2,7 @@
   <section class="social-media-wrapper">
     <div class="container">
       <div class="social-content">
-        <h1>ABONNEZ-VOUS</h1>
+        <h2>ABONNEZ-VOUS</h2>
         <ul>
           <li>
             <a href="#">
@@ -50,13 +50,15 @@ export default {};
 
   @include phone {
     height: 100%;
+    padding: 30px 0;
   }
 
-  h1 {
+  h2 {
     color: $white;
   }
 
   ul {
+    padding-left: 0 !important;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

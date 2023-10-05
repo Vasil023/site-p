@@ -58,6 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/variables.scss";
+@import "@/assets/mixin.scss";
 .swiper-overflow-container {
   overflow-x: hidden;
 
@@ -111,6 +113,10 @@ export default {
   font-size: 48px;
   font-weight: 700;
   line-height: 32px;
+
+  @include phone {
+    font-size: 38px;
+  }
 }
 
 .swiper-overflow-container {
@@ -142,7 +148,7 @@ export default {
   }
 
   p {
-    font-size: rem(20);
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 0;
   }
@@ -157,9 +163,9 @@ export default {
   margin-top: 8px;
 
   p {
-    font-size: rem(16);
+    font-size: 16px !important;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px !important; /* 150% */
     letter-spacing: 1.4px;
   }
 }
