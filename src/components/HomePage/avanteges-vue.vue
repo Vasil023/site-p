@@ -204,12 +204,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/variables.scss";
-@import "@/assets/mixin.scss";
+@import "@/assets/scss/variables.scss";
+@import "@/assets/scss/mixin.scss";
 
 h3 {
   font-size: 44px;
   font-weight: 600;
+
+  @include phone {
+    font-size: 35px;
+  }
 }
 
 ul {
