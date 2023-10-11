@@ -22,7 +22,7 @@
               <router-link class="nav-link" to="/">Gayssot </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Nos services</router-link>
+              <router-link class="nav-link" to="/questions">Nos services</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/">Nos Tarifs</router-link>
@@ -58,7 +58,7 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "@/assets/variables.scss";
+@import "@/assets/scss/variables.scss";
 nav {
   background: #eae6f4;
 }

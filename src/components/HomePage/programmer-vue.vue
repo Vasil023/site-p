@@ -19,8 +19,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/variables.scss";
-@import "@/assets/mixin.scss";
+@import "@/assets/scss/variables.scss";
+@import "@/assets/scss/mixin.scss";
 
 .programmer {
   padding: 180px 0;
