@@ -22,7 +22,6 @@ export default {};
 <style lang="scss" scoped>
 .wrapper-box {
   margin-top: 88px;
-  padding-bottom: 120px;
 }
 .box {
   // margin: 48px auto;
