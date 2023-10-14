@@ -10,7 +10,7 @@ textarea::placeholder {
   font-weight: 300 !important;
 }
 
-.form-control {
+.form-control, .form-select {
   border-radius: 8px;
   background: #eae6f4 !important;
   border: none !important;
@@ -18,7 +18,7 @@ textarea::placeholder {
   margin-bottom: 16px !important;
 }
 
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   box-shadow: none !important;
 }
 
@@ -30,5 +30,64 @@ textarea::placeholder {
 
 .input-group-text {
   background: #eae6f4 !important;
+}
+
+// .new-styles .vs__search::placeholder,
+// .new-styles .vs__dropdown-toggle,
+// .new-styles .vs__dropdown-menu {
+//   background: #dfe5fb;
+//   border: none;
+//   color: #424242;
+//   text-transform: lowercase;
+//   font-variant: small-caps;
+// }
+
+// .new-styles .vs__clear,
+// .new-styles .vs__open-indicator {
+//   fill: #394066;
+// }
+
+ .v-select {
+  background: #EAE6F4;
+  border-radius: 8px !important;
+  margin-bottom: 16px;
+}
+
+.vs--open  {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 
 }
+
+.vs__dropdown-toggle {
+  border: none !important;
+  padding: 12px !important;
+
+}
+
+.vs__dropdown-menu {
+  background: #EAE6F4 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.vs__dropdown-option {
+  border-bottom: 1px solid #9E9E9E;
+  padding: 12px !important;
+  color: #424242 !important;
+}
+
+.vs__dropdown-option--highlight  {
+  background: #c2bccd !important;
+}
+
+// .vs__actions {
+//   background-image: url('@/assets/img/icon/arrow.svg');
+
+//   svg {
+//     display: none;
+//   }
+// }
+

@@ -28,7 +28,7 @@
               <router-link class="nav-link" to="/nos-tarifs">Nos Tarifs</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">RSE </router-link>
+              <router-link class="nav-link" to="/form">RSE </router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/">Actualités </router-link>

@@ -36,5 +36,11 @@ form {
     line-height: 48px;
     margin-bottom: 16px;
   }
+
+  h5 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
 }
 </style>
