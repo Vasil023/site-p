@@ -25,10 +25,10 @@
               <router-link class="nav-link" to="/questions">Nos services</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Nos Tarifs</router-link>
+              <router-link class="nav-link" to="/nos-tarifs">Nos Tarifs</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">RSE </router-link>
+              <router-link class="nav-link" to="/form">RSE </router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/">Actualités </router-link>
@@ -95,10 +95,5 @@ nav {
   font-size: 12px !important;
   line-height: 16.002px !important; /* 114.3% */
   letter-spacing: 1.4px !important;
-}
-
-.active {
-  text-decoration: underline;
-  text-underline-offset: 5px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <main class="page">
+  <main>
     <!-- First screen -->
     <section class="first-screen">
       <div class="overlay"></div>

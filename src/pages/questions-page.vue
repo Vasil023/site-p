@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page">
     <div class="container">
       <div class="q-wrapper">
         <div class="d-none d-lg-none d-xl-block">
@@ -224,7 +224,6 @@ section {
 .q-wrapper {
   display: flex;
   gap: 20px;
-  padding-top: 120px;
 
   h3 {
     font-size: 48px;
