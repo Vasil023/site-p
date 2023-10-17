@@ -289,32 +289,6 @@ ul {
   }
 }
 
-.list {
-  margin-top: 16px;
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.li-i {
-  position: relative;
-  display: block;
-  padding-left: 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    display: block;
-    background: url("@/assets/img/icon/icon.svg");
-    left: 0;
-  }
-
-  p {
-    margin-bottom: 0;
-    font-weight: 600;
-  }
-}
 .nos-tarif-content > h3,
 .nos-tarif-content > h4,
 .nos-tarif-content > h5 {

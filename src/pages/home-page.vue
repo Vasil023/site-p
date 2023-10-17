@@ -84,75 +84,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "@/assets/scss/variables.scss";
-@import "@/assets/scss/mixin.scss";
-
+<style lang="scss" scoped>
 .first-screen {
-  background: url("@/assets/img/cover.png");
-  background-color: #000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: calc(100vh - 63px);
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  &-content {
-    position: relative;
-    padding-left: 18px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 7px;
-      height: 100%;
-      background-color: $white;
-      border-radius: 11px;
-      left: 0;
-      top: 0;
-    }
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 56px !important;
-    font-weight: 700 !important;
-    line-height: 84px !important;
-  }
-
-  p {
-    color: $white;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 42px;
-    margin-top: 25px;
-  }
-
-  a {
-    position: relative;
-    margin-top: 73px;
-    z-index: 5;
-  }
-
-  @include phone {
-    h1 {
-      color: #fff;
-      font-size: 30px !important;
-      font-weight: 700 !important;
-      line-height: 44px !important;
-    }
-
-    p {
-      font-size: 26px;
-      line-height: 32px;
-    }
-  }
+  background: url("@/assets/img/cover/cover.png");
 }
-
 .overlay {
   position: absolute;
   width: 100%;

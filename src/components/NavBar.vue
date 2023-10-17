@@ -31,16 +31,16 @@
               <router-link class="nav-link" to="/form">RSE </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Actualités </router-link>
+              <router-link class="nav-link" to="/page-1">Actualités </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">FAQ </router-link>
+              <router-link class="nav-link" to="/page-2">FAQ </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Offres d’emploi </router-link>
+              <router-link class="nav-link" to="/page-2-1">Offres d’emploi </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Espace client </router-link>
+              <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
             </li>
           </ul>
           <form class="d-flex gap-3" role="search">
