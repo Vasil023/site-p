@@ -7,7 +7,10 @@
         :slidesPerView="'auto'"
         :spaceBetween="30"
         :freeMode="true"
-        :navigation="true"
+        :navigation="{
+          prevEl: prev,
+          nextEl: next,
+        }"
         :modules="modules"
         class="mySwiper swiper-propertis swiper-container"
       >
@@ -28,10 +31,15 @@
           </div>
         </swiper-slide>
       </swiper>
+      <div class="swiper-btn">
+        <div ref="prev" class="swiper-button-prev"></div>
+        <div ref="next" class="swiper-button-next"></div>
+      </div>
     </div>
   </div>
 </template>
 <script>
+import { ref } from "vue";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -50,8 +58,12 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const prev = ref(null);
+    const next = ref(null);
     return {
       modules: [FreeMode, Navigation],
+      prev,
+      next,
     };
   },
 };
@@ -83,9 +95,21 @@ export default {
   padding: 60px 0px 100px 0px;
 }
 
+.swiper-btn {
+  width: 94px;
+  height: 39px;
+  position: relative;
+  bottom: 47px;
+  left: 50%;
+
+  @include phone {
+    display: none;
+  }
+}
+
 :deep(.swiper-button-next) {
-  right: 613px !important;
-  top: 430px;
+  // right: 613px !important;
+  // top: 430px;
   color: #13023e;
 
   &::after {
@@ -94,8 +118,8 @@ export default {
 }
 
 :deep(.swiper-button-prev) {
-  left: 625px !important;
-  top: 430px;
+  // left: 625px !important;
+  // top: 430px;
   color: #13023e;
 
   &::after {

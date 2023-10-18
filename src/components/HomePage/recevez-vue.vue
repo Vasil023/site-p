@@ -2,7 +2,7 @@
   <section class="recevez">
     <div class="container">
       <div class="recevez-top">
-        <h2>Recevez un audit gratuit de votre poste clients</h2>
+        <h1>Recevez un audit gratuit de votre poste clients</h1>
         <p>
           GAYSSOT est là pour vous accompagner dans la gestion de votre poste clients et vous propose un audit
           gratuit sans aucun engagement

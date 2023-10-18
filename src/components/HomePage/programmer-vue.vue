@@ -36,6 +36,11 @@ export default {};
   border-color: #3a0987;
   padding: 67px 35px 67px 35px;
   text-align: center;
+  margin: 0 120px;
+
+  @include tablet-up {
+    margin: 0;
+  }
 
   .btn-yellow {
     margin-top: 60px;
