@@ -266,13 +266,13 @@ export default {
       let loadMoreBtn = document.querySelector("#load-more-btn"),
         items = document.querySelector(".load-more__block");
 
-      if (loadMoreBtn) {
-        loadMoreBtn.onclick = (e) => {
-          e.preventDefault();
-          items.style.display = "block";
-          loadMoreBtn.style.display = "none";
-        };
-      }
+      console.log("click", loadMoreBtn);
+
+      loadMoreBtn.onclick = (e) => {
+        e.preventDefault();
+        items.style.display = "block";
+        loadMoreBtn.style.display = "none";
+      };
     },
   },
 };

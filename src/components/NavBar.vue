@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-xxl bg-body-tertiary">
+    <nav class="navbar navbar-expand-xxl">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="@/assets/img/logo.png" alt="" />
@@ -65,6 +65,8 @@ nav {
 
 .navbar {
   padding: 23px 0;
+  background: #eae6f4 !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.55);
 }
 
 .navbar-brand {

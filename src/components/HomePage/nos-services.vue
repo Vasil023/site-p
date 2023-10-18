@@ -97,17 +97,17 @@ ul {
   }
 
   &:hover {
-    background-color: #309;
+    // background-color: #309;
     box-shadow: 12px 20px 17px 0px rgba(0, 0, 0, 0.25);
 
-    img {
-      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(313deg)
-        brightness(102%) contrast(104%);
-    }
+    // img {
+    //   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(313deg)
+    //     brightness(102%) contrast(104%);
+    // }
 
-    p {
-      color: $white;
-    }
+    // p {
+    //   color: $white;
+    // }
   }
 }
 

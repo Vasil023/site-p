@@ -15,7 +15,7 @@
           </p>
         </div>
 
-        <a href="#" class="btn-yellow">DEMANDEZ UN AUDIT</a>
+        <a href="#" class="btn-yellow">demander un devis</a>
       </div>
     </section>
 
@@ -87,6 +87,17 @@ export default {
 <style lang="scss" scoped>
 .first-screen {
   background: url("@/assets/img/cover/cover.png");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 63px);
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .overlay {
   position: absolute;

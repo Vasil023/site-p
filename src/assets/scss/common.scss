@@ -27,7 +27,7 @@
     @include phone {
       font-size: 24px;
       font-weight: 700;
-      line-height: 18px;
+      line-height: 30px;
     }
   }
 
@@ -162,15 +162,19 @@
 
 ._link {
   color: #309;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
-  font-weight: 300;
-  letter-spacing: 1.4px;
+  font-weight: 400;
+  // letter-spacing: 1.4px;
 
 }
 
 .content {
   padding-top: 60px;
+
+  @include phone {
+    padding-top: 30px;
+  }
 }
 
 h1,

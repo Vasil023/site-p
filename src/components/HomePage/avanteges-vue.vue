@@ -26,23 +26,24 @@
               </div>
             </li>
             <li class="avanteges-item">
-              <div class="avanteges-icon"><img src="@/assets/img/avantages/3.svg" alt="icon" /></div>
+              <div class="avanteges-icon"><img src="@/assets/img/avantages/10.svg" alt="icon" /></div>
               <div class="avanteges-content">
-                <p>l’argent récupéré va directement survotre compte</p>
+                <p>Un logiciel propriétaire</p>
                 <span
-                  >Gayssot est une des rares agences de recouvrement à proposer ce service. Vous améliorez
-                  immédiatement votre trésorerie.</span
-                >
+                  >Propriétaire et éditeur de notre outil de recouvrement, notre savoir-faire métier allié à
+                  notre compétence technologique permet d’agir avec flexibilité et rapidité afin de vous
+                  proposer toujours plus d’innovation dans les méthodes de recouvrement.
+                </span>
               </div>
             </li>
             <li class="avanteges-item">
-              <div class="avanteges-icon"><img src="@/assets/img/avantages/4.svg" alt="icon" /></div>
+              <div class="avanteges-icon"><img src="@/assets/img/avantages/11.svg" alt="icon" /></div>
               <div class="avanteges-content">
-                <p>un conseiller ou une équipe dédiés</p>
+                <p>Une expertise juridique et judiciaire</p>
                 <span
-                  >Chaque client de Gayssot a un conseiller ou une équipe dédiés. Facilement joignable par
-                  téléphone, e-mail, ou sur RDV physique.</span
-                >
+                  >Une équipe interne de juristes, médiateur professionnel et un réseau de partenaires
+                  (avocats, huissiers, cabinets d’investigation).
+                </span>
               </div>
             </li>
             <li id="load-more-btn">
@@ -54,12 +55,13 @@
 
       <!-- Load more block -->
       <div class="load-more-block">
-        <div class="row flex-xxl-row flex-column-reverse">
+        <div class="row flex-xxl-row flex-column">
           <div class="col-xl-6 col-lg-7 col-md-12">
             <ul>
               <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/11.svg" alt="icon" /></div>
+                <div class="avanteges-icon"><img src="@/assets/img/avantages/15.svg" alt="icon" /></div>
                 <div class="avanteges-content">
+                  <p>Des reportings et process sur mesure</p>
                   <span
                     >Nos ressources et moyens IT modulaires permettent une connexion simple et sur-mesure
                     entre notre ERP et les applicatifs métiers de nos clients afin d’assurer des gros volumes
@@ -68,44 +70,13 @@
                 </div>
               </li>
               <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/12.svg" alt="icon" /></div>
+                <div class="avanteges-icon"><img src="@/assets/img/avantages/7.svg" alt="icon" /></div>
                 <div class="avanteges-content">
+                  <p>Une équipe dédiée</p>
                   <span>
-                    Notre équipe de juristes et de commissaires de justice vous accompagnent et vous
-                    conseillent pendant toute la phase de recouvrement judiciaire grâce à leur expertise et à
-                    notre réseau d’Huissiers et d’avocats sur toute la France.
+                    Une équipe dédiée et connue par vos équipes interne, toujours joignable et à votre écoute.
                   </span>
                 </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/13.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >Si le recouvrement est impossible ou infructueux, Gayssot délivre un certificat
-                    d’irrécouvrabilité gratuitement, vous permettant ainsi de récupérer la TVA;</span
-                  >
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/14.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >Notre Certification ISO 9001 V2015 vous garantit le plus haut niveau de la qualité ;
-                  </span>
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/15.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >L’échange sécurisé de documents sur notre plateforme SaaS permet de conserver la
-                    confidentialité des documents et protéger les données contre toute menace de piratage
-                    informatique ;</span
-                  >
-                </div>
-              </li>
-              <li>
-                <a href="#" class="btn-purple _block">moins d'avantages de Gaisot</a>
               </li>
             </ul>
           </div>
@@ -113,63 +84,27 @@
           <div class="col-xl-6 col-lg-7 col-md-12">
             <ul>
               <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/5.svg" alt="icon" /></div>
+                <div class="avanteges-icon"><img src="@/assets/img/avantages/3.svg" alt="icon" /></div>
                 <div class="avanteges-content">
+                  <p>Un compte bancaire dédié</p>
                   <span
-                    >Notre logiciel de recouvrement permet de suivre en temps réel l’avancement de vos
-                    dossiers et l’historique des actions menées ainsi que le montant des sommes encaissées
+                    >Les sommes recouvrées sont automatiquement versées sur votre compte bancaire afin
+                    d’optimiser votre DSO.
                   </span>
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/6.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >Des reporting réguliers et sur-mesure sont possibles en choisissant les KPI’s et la
-                    fréquence souhaités.
-                  </span>
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/7.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >Gayssot est une entreprise Lyonnaise dont tous les effectifs sont basés en France.</span
-                  >
                 </div>
               </li>
               <li class="avanteges-item">
                 <div class="avanteges-icon"><img src="@/assets/img/avantages/8.svg" alt="icon" /></div>
                 <div class="avanteges-content">
-                  <span>Gayssot recouvrement couvre aussi bien la France que l’international ; </span>
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/9.svg" alt="icon" /></div>
-                <div class="avanteges-content">
+                  <p>Une entreprise Lyonnaise, une influence mondiale</p>
                   <span
-                    >Nous travaillons aussi bien avec des TPE que des grands groupes, pour des petites
-                    créances ou pour celles de plusieurs millions d’euros ;
+                    >Gayssot, une entreprise Lyonnaise, dont tous les effectifs sont basés en France,
+                    intervient également à l’international.
                   </span>
                 </div>
               </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/10.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >90% des factures sont recouvrées à l’amiable tout en préservant la relation client;</span
-                  >
-                </div>
-              </li>
-              <li class="avanteges-item">
-                <div class="avanteges-icon"><img src="@/assets/img/avantages/11.svg" alt="icon" /></div>
-                <div class="avanteges-content">
-                  <span
-                    >Nos ressources et moyens IT modulaires permettent une connexion simple et sur-mesure
-                    entre notre ERP et les applicatifs métiers de nos clients afin d’assurer des gros volumes
-                    de factures ( 1 300 000 factures traitées en un an)</span
-                  >
-                </div>
+              <li>
+                <a href="#" class="btn-purple _block">moins d'avantages de Gaisot</a>
               </li>
             </ul>
           </div>
@@ -192,8 +127,8 @@ export default {
         loadMoreBtn.onclick = (e) => {
           e.preventDefault();
           items.style.display = "block";
-          img.style.height = "755px";
-          wrapper.style.height = "755px";
+          img.style.height = "736px";
+          wrapper.style.height = "736px";
 
           loadMoreBtn.style.display = "none";
         };
@@ -227,7 +162,7 @@ ul {
 
   img {
     width: 100%;
-    height: 857px;
+    height: 833px;
     border-radius: 16px;
   }
 
@@ -237,7 +172,7 @@ ul {
 }
 
 .avanteges-wrapper {
-  height: 857px;
+  height: 833px;
 
   @include tablet-up {
     height: 100% !important;

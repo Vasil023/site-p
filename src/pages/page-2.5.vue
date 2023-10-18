@@ -11,13 +11,13 @@
     </section>
 
     <section class="container">
-      <p>
+      <p class="pe-5">
         Votre client ne peut plus <strong>respecter les délais de paiement</strong> qui lui incombent ? Son
         entreprise est défaillante et entre en état de <strong>cessation de paiement?</strong><br />
         Gayssot Recouvrement, expert de la gestion du poste client et du recouvrement, vous accompagne dans
         <strong>la gestion des défaillances d’entreprise</strong> auxquelles vous devez faire face!
       </p>
-      <p>
+      <p class="pe-5">
         Il est important d’être vigilant et réactif pour répondre aux
         <strong>obligations légales</strong> (formalisme, délai de déclaration).
         <strong>La gestion de la défaillance d’entreprise</strong> est longue et fastidieuse. Nous prenons en
@@ -27,27 +27,55 @@
 
     <section>
       <div class="container">
-        <div class="d-items d-flex">
+        <div class="d-items d-flex justify-content-center flex-wrap mt-5 pt-4">
           <div class="d-item">
-            <p>Déclarations de créances</p>
+            <p>
+              <span>Déclarations de créances</span>
+            </p>
           </div>
           <div class="d-item">
-            <p>Gestion de l’actif</p>
+            <p><span>Gestion de l’actif</span></p>
           </div>
           <div class="d-item">
-            <p>Négociations de contrats</p>
+            <p>
+              <span>Négociations de contrats</span>
+            </p>
           </div>
           <div class="d-item">
-            <p>Gestion de passif</p>
+            <p>
+              <span>Gestion de passif</span>
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="mt-5 pt-3">
+      <div class="container">
+        <h3>Pourquoi faire appel à Gayssot Recouvrement pour votre gestion des défaillances d’entreprise?</h3>
+        <p>
+          La réactivité et l’expertise de notre cabinet face aux obligations légales vous permettront d’éviter
+          la forclusion. Vous économiserez du temps et recentrerez vos ressources sur des activités à plus
+          forte rentabilité. Grâce à son expertise dans
+          <a href="#" class="_link">la gestion du poste client,</a> notre cabinet de recouvrement peut
+          également vous accompagner dans la gestion de ce poste stratégique pour améliorer votre santé
+          financière, anticiper le risque client et savoir faire face à ce risque.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <NosExperts />
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import NosExperts from "@/components/shared/Nos-experts.vue";
+
+export default {
+  components: { NosExperts },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -77,6 +105,10 @@ export default {};
     width: 880px;
     margin: 0 auto;
     gap: 24px;
+
+    @include tablet-up {
+      width: 100%;
+    }
   }
 
   &-item {
@@ -88,18 +120,20 @@ export default {};
 
     p {
       text-align: center;
-      position: relative;
       margin-bottom: 0 !important;
 
-      &::before {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        background: #7300ff;
-        transform: rotate(-45deg);
-        left: 65px;
-        top: 8px;
+      span {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background: #7300ff;
+          transform: rotate(-45deg);
+          left: -20px;
+          top: 5px;
+        }
       }
     }
   }
