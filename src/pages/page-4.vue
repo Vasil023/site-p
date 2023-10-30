@@ -40,6 +40,17 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+        <div class="rse-img d-flex flex-column flex-md-row justify-content-sm-between mt-5 pt-4 mb-5">
+          <img src="@/assets/img/RSE/1.png" alt="" />
+          <img src="@/assets/img/RSE/2.png" alt="" />
+          <img src="@/assets/img/RSE/3.png" alt="" />
+          <img src="@/assets/img/RSE/4.png" alt="" />
+        </div>
+      </div>
+    </section>
+
     <div class="container">
       <NosExperts />
     </div>
@@ -73,6 +84,18 @@ export default {
     color: $white;
     bottom: 60px;
     position: absolute;
+  }
+}
+
+.rse-img {
+  img {
+    object-fit: contain;
+    aspect-ratio: 3/2;
+  }
+
+  @include phone {
+    width: 320px;
+    margin: 0 auto;
   }
 }
 </style>

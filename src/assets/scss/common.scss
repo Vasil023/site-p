@@ -74,6 +74,7 @@
 
 .page {
   padding: 120px 0;
+  position: relative;
 
   @include phone {
     padding: 24px 0;

@@ -59,6 +59,13 @@
           <li>Economie de votre temps pour développer des activités plus rentables;</li>
           <li>Préserver la relation client / fournisseur.</li>
         </ul>
+
+        <div class="p-bold">
+          <p class="mt-5 pe-2">
+            Votre recouvrement amiable n’a pas abouti? Gayssot prend en charge vos dossiers en
+            <a href="#" class="_link"> recouvrement judiciaire. </a>
+          </p>
+        </div>
       </div>
     </section>
 
