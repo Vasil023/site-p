@@ -42,6 +42,21 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">À propos de nous</a></li>
+                <li><a class="dropdown-item" href="#">Conseils & Info</a></li>
+              </ul>
+            </li>
           </ul>
           <form class="d-flex gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
@@ -86,8 +101,8 @@ nav {
 
 .navbar-nav {
   margin-left: 20px !important;
-  width: 668px !important;
-  overflow: hidden !important;
+  // width: 668px !important;
+  // overflow: hidden !important;
 }
 
 .nav-link {
@@ -97,5 +112,21 @@ nav {
   font-size: 12px !important;
   line-height: 16.002px !important; /* 114.3% */
   letter-spacing: 1.4px !important;
+}
+
+.dropdown-menu {
+  background: #eae6f4 !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  color: #4a4a4a !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 </style>

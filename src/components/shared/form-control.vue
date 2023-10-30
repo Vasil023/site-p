@@ -24,6 +24,8 @@ form {
   background: #fff;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.17);
   padding: 32px;
+  z-index: 10;
+  position: relative;
 
   @include phone {
     padding: 12px;
