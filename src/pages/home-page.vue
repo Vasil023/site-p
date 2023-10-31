@@ -6,8 +6,8 @@
       <div class="container">
         <div class="first-screen-content col-xl-11">
           <h1 class="heading-title">
-            TEST Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches
-            À valeur ajoutée
+            Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches À
+            valeur ajoutée
           </h1>
           <p>
             Faites-vous payer en phase amiable en 60 jours jusqu’à 90% de vos factures impayées grâce à
