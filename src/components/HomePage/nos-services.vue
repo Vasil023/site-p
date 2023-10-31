@@ -6,52 +6,52 @@
 
       <ul class="gap-5 flex-wrap col-xl-10 justify-content-center offset-xl-1 services-items">
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page21' }" class="services-item-link">
             <img src="@/assets/img/nos-services/1.svg" alt="icon" />
             <p>Pré-relance commerciale</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page22' }" class="services-item-link">
             <img src="@/assets/img/nos-services/2.svg" alt="icon" />
             <p>Recouvrement amiable</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page24' }" class="services-item-link">
             <img src="@/assets/img/nos-services/3.svg" alt="icon" />
             <p>Recouvrement judiciaire</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page23' }" class="services-item-link">
             <img src="@/assets/img/nos-services/4.svg" alt="icon" />
             <p>Médiation</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page25' }" class="services-item-link">
             <img src="@/assets/img/nos-services/5.svg" alt="icon" />
             <p>Gestion des défaillances</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page26' }" class="services-item-link">
             <img src="@/assets/img/nos-services/6.svg" alt="icon" />
             <p>Audit et Conseils</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page27' }" class="services-item-link">
             <img src="@/assets/img/nos-services/7.svg" alt="icon" />
             <p>Créances à l’international</p>
-          </a>
+          </router-link>
         </li>
         <li class="services-item">
-          <a href="#" class="services-item-link">
+          <router-link :to="{ name: 'Page28' }" class="services-item-link">
             <img src="@/assets/img/nos-services/8.svg" alt="icon" />
             <p>Formation</p>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>

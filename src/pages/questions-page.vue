@@ -23,12 +23,8 @@
             </div>
             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Il est essentiel de faire appel à un cabinet de recouvrement dès qu'une facture est en
+                souffrance. Plus tôt vous agirez, plus grandes seront vos chances de récupérer vos paiements.
               </div>
             </div>
           </div>
@@ -47,12 +43,8 @@
             </div>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Faire appel à un cabinet de recouvrement permet de libérer des ressources internes de votre
+                entreprise, de préserver la trésorerie et d'améliorer le délai moyen de paiement.
               </div>
             </div>
           </div>
@@ -71,12 +63,8 @@
             </div>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Les procédures de recouvrement de Gayssot sont faites sur mesures et adaptées à chaque client,
+                aussi bien à l'amiable qu’en marque blanche ou en nom propre.
               </div>
             </div>
           </div>
@@ -95,12 +83,9 @@
             </div>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Par notre capacité à proposer des solutions modulables et sur-mesures; notre capacité à
+                préserver le lien commercial entre notre client et son débiteur (28 % de nos clients sont des
+                anciens débiteurs).
               </div>
             </div>
           </div>
@@ -119,12 +104,9 @@
             </div>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Nos juristes étudient chaque dossier avec minutie en tenant compte du contexte, de la
+                solvabilité du débiteur ainsi que nos chances de réussite afin de privilégier l’action
+                judiciaire la plus adaptée.
               </div>
             </div>
           </div>
@@ -143,12 +125,11 @@
             </div>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Oui, le recours à une société de recouvrement est compatible avec une assurance-crédit et peut
+                même l'optimiser de plusieurs façons: En traitant les impayés des clients non assurés, ceux
+                que l'assureur exclut. En gérant les impayés des clients assurés en non-dénommés, sachant que
+                généralement seulement 60 % d'entre eux sont indemnisés. En intervenant sur les impayés des
+                clients dénommés dans le délai de déclaration de 60 jours à l'assurance.
               </div>
             </div>
           </div>
@@ -167,12 +148,11 @@
             </div>
             <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Le taux d’honoraire appliqué est calculé en fonction du montant global des factures confiées,
+                leurs nombres, leurs anciennetés et la localisation des débiteurs. Chaque action judiciaire
+                envisagée fait l’objet d’un devis détaillé transmis au client pour approbation avant le
+                lancement de l’action en justice. Pour obtenir votre taux d’honoraire personnalisé, cliquez
+                ici
               </div>
             </div>
           </div>
@@ -192,12 +172,9 @@
             </div>
             <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse plugin adds the appropriate classes that we use to style each element. These classes
-                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                Nous nous adaptons à tous les outils existants. Nous sommes capables de faire du sur-mesure et
+                de gérer de gros volumes de transactions. Nous disposons d’un logiciel propriétaire qui est
+                modulable et personnalisable.
               </div>
             </div>
           </div>
@@ -250,12 +227,21 @@ section {
   border-radius: 0px;
 }
 
+.accordion-body {
+  color: $black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .accordion-item:last-of-type {
   border-bottom: none;
 }
 
 .accordion-button {
   padding: 24px 16px;
+  font-weight: 500;
+  font-size: 18px;
 
   &::after {
     background-image: url("@/assets/img/icon/arrow.svg");
