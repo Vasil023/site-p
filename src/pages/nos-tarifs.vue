@@ -266,8 +266,6 @@ export default {
       let loadMoreBtn = document.querySelector("#load-more-btn"),
         items = document.querySelector(".load-more__block");
 
-      console.log("click", loadMoreBtn);
-
       loadMoreBtn.onclick = (e) => {
         e.preventDefault();
         items.style.display = "block";

@@ -103,8 +103,8 @@
                   </span>
                 </div>
               </li>
-              <li>
-                <a href="#" class="btn-purple _block">moins d'avantages de Gaisot</a>
+              <li id="hide-more-btn">
+                <button @click="hideMore" class="btn-purple _block">moins d'avantages de Gaisot</button>
               </li>
             </ul>
           </div>
@@ -131,6 +131,25 @@ export default {
           wrapper.style.height = "736px";
 
           loadMoreBtn.style.display = "none";
+        };
+      }
+    },
+
+    hideMore() {
+      let loadMoreBtn = document.querySelector("#load-more-btn"),
+        hideMoreBtn = document.querySelector("#hide-more-btn"),
+        items = document.querySelector(".load-more-block"),
+        img = document.querySelector(".avanteges-img"),
+        wrapper = document.querySelector(".avanteges-wrapper");
+
+      if (hideMoreBtn) {
+        hideMoreBtn.onclick = (e) => {
+          e.preventDefault();
+          items.style.display = "none";
+          img.style.height = "833px";
+          wrapper.style.height = "833px";
+
+          loadMoreBtn.style.display = "block";
         };
       }
     },

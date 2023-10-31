@@ -2,9 +2,9 @@
   <div>
     <nav class="navbar navbar-expand-xxl">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <router-link class="navbar-brand" to="/">
           <img src="@/assets/img/logo.png" alt="" />
-        </a>
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -18,30 +18,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">Gayssot </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/questions">Nos services</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/nos-tarifs">Nos Tarifs</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/form">RSE </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/page-1">Actualités </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/page-2">FAQ </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/page-2-1">Offres d’emploi </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
-            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -50,17 +26,81 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Gayssot
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">À propos de nous</a></li>
-                <li><a class="dropdown-item" href="#">Conseils & Info</a></li>
+                <li>
+                  <router-link :to="{ name: 'Page1' }" class="dropdown-item">À propos de nous</router-link>
+                </li>
+                <li><router-link :to="{ name: 'Page4' }" class="dropdown-item">RSE</router-link></li>
+                <!-- <li><a class="dropdown-item" href="#">Conseils & Info</a></li> -->
+                <li>
+                  <router-link :to="{ name: 'Page7' }" class="dropdown-item">Offres d’emploi</router-link>
+                </li>
               </ul>
+            </li>
+
+            <!-- <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'Page2' }">Nos services</router-link>
+            </li> -->
+            <li class="nav-item dropdown">
+              <router-link class="nav-link dropdown-toggle" :to="{ name: 'Page2' }" role="button">
+                Nos services
+              </router-link>
+              <ul class="dropdown-menu">
+                <li>
+                  <router-link :to="{ name: 'Page21' }" class="dropdown-item"
+                    >Pré-relance commerciale</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page22' }" class="dropdown-item"
+                    >Recouvrement amiable</router-link
+                  >
+                </li>
+
+                <li>
+                  <router-link :to="{ name: 'Page24' }" class="dropdown-item">Médiation</router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page23' }" class="dropdown-item"
+                    >Recouvrement judiciaire</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page25' }" class="dropdown-item"
+                    >Gestion des défaillances</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page26' }" class="dropdown-item">Audit & Conseils</router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page27' }" class="dropdown-item"
+                    >Créances à l'international</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Page28' }" class="dropdown-item">Formation</router-link>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <router-link class="nav-link" to="/nos-tarifs">Nos Tarifs</router-link>
+            </li>
+
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'faq' }">FAQ </router-link>
+            </li>
+
+            <li class="nav-item">
+              <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
             </li>
           </ul>
           <form class="d-flex gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
-            <a href="#" class="btn-yellow">Devis gratuit</a>
+            <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">Devis gratuit</router-link>
           </form>
         </div>
       </div>
@@ -128,5 +168,10 @@ nav {
 
 .dropdown-toggle::after {
   display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0 !important; /* remove the gap so it doesn't close */
 }
 </style>
