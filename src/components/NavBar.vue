@@ -98,10 +98,10 @@
               <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
             </li>
           </ul>
-          <form class="d-flex gap-3" role="search">
+          <div class="d-flex gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
             <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">Devis gratuit</router-link>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -119,7 +119,7 @@ nav {
 }
 
 .navbar {
-  padding: 23px 0;
+  // padding: 23px 0;
   background: #eae6f4 !important;
   border-bottom: 2px solid rgba(255, 255, 255, 0.55);
 }
