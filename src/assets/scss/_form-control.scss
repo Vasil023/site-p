@@ -1,3 +1,42 @@
+form {
+  width: 100%;
+  // height: 500px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.17);
+  padding: 32px;
+  z-index: 10;
+  position: relative;
+
+  @include phone {
+    padding: 12px;
+  }
+}
+
+.form-top {
+  h4 {
+    text-align: center;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+
+  h5 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+}
+
+.input-group  {
+  margin-bottom: 16px !important;
+}
+
+.input-error {
+  border: 1px solid rgb(226, 20, 20);
+  border-radius: 8px;
+}
+
+
 input::placeholder {
   color: #858585 !important;
   font-size: 16px !important;
@@ -15,7 +54,6 @@ textarea::placeholder {
   background: #eae6f4 !important;
   border: none !important;
   padding: 12px 12px 12px 12px !important;
-  margin-bottom: 16px !important;
 }
 
 .form-control:focus, .form-select:focus {
@@ -24,7 +62,7 @@ textarea::placeholder {
 
 .input-group-text {
   padding: 12px 2px 12px 16px !important;
-  margin-bottom: 16px !important;
+
 
 }
 

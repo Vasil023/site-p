@@ -44,12 +44,12 @@
             <li>Honoraire basé sur le mérite (honoraires uniquement sur encaissements);</li>
             <li>Aucune ouverture de frais de dossier.</li>
           </ul>
-          <button @click="loadMore" id="load-more-btn" class="btn-purple _block">
+          <button @click="show = true" v-if="!show" class="btn-purple _block load-more">
             Voir plus d’avantages de GAYSSOT
           </button>
 
           <!-- Load more -->
-          <div class="load-more__block">
+          <div class="load-more__block" v-if="show">
             <h5>Les AVANTAGES de <span>GAYSSOT Recouvrement</span></h5>
             <ul class="avanteges-items">
               <li class="avanteges-item">
@@ -137,118 +137,152 @@
                 </div>
               </li>
               <li>
-                <button class="btn-purple _block">moins d'avantages de Gaisot</button>
+                <button class="btn-purple _block" @click="show = false">moins d'avantages de Gaisot</button>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="col-xl-5 col-md-12 col-lg-5 offset-xl-1 bg">
-          <FormControl>
-            <template #heading-bold>
-              <h4>Vous souhaitez en savoir plus sur nos tarifs et notre accompagnement?</h4>
-            </template>
-            <template #subtitle>
-              <p>
-                Un conseiller vous rappellera au plus vite pour comprendre vos besoins et répondre à toutes
-                vos questions.
-              </p>
-            </template>
-            <template #inputs>
-              <div class="row g-3">
-                <div class="col">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/1.svg" alt="" />
+          <form ref="form" @submit.prevent="sendEmail">
+            <FormControl>
+              <template #heading-bold>
+                <h4>Vous souhaitez en savoir plus sur nos tarifs et notre accompagnement?</h4>
+              </template>
+              <template #subtitle>
+                <p>
+                  Un conseiller vous rappellera au plus vite pour comprendre vos besoins et répondre à toutes
+                  vos questions.
+                </p>
+              </template>
+              <template #inputs>
+                <div class="row g-3">
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.firstname.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/1.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="firstname"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Nom*"
+                      />
                     </div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Nom*" />
                   </div>
-                </div>
 
-                <div class="col">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/1.svg" alt="" />
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.lastname.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/1.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="lastname"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Prénom*"
+                      />
                     </div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Prénom*" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="input-group">
-                  <div class="input-group-text">
-                    <img src="@/assets/img/form-icon/2.svg" alt="" />
-                  </div>
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Société*" />
-                </div>
-              </div>
-
-              <div class="row g-3">
-                <div class="col">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/email.svg" alt="" />
-                    </div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="E-mail*" />
                   </div>
                 </div>
 
                 <div class="col">
-                  <div class="input-group">
+                  <div class="input-group" :class="{ 'input-error': v$.societe.$error }">
                     <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/3.svg" alt="" />
+                      <img src="@/assets/img/form-icon/2.svg" alt="" />
                     </div>
                     <input
+                      v-model="societe"
                       type="text"
                       class="form-control"
                       id="autoSizingInputGroup"
-                      placeholder="Téléphone*"
+                      placeholder="Société*"
                     />
                   </div>
                 </div>
-              </div>
 
-              <div class="row g-3">
-                <div class="col">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/4.svg" alt="" />
+                <div class="row g-3">
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.email.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/email.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="email"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="E-mail*"
+                      />
                     </div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Ville*" />
+                  </div>
+
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.phone.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/3.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="phone"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Téléphone*"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div class="col">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <img src="@/assets/img/form-icon/5.svg" alt="" />
+                <div class="row g-3">
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.ville.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/4.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="ville"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Ville*"
+                      />
                     </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="autoSizingInputGroup"
-                      placeholder="Code postale*"
-                    />
+                  </div>
+
+                  <div class="col">
+                    <div class="input-group" :class="{ 'input-error': v$.code.$error }">
+                      <div class="input-group-text">
+                        <img src="@/assets/img/form-icon/5.svg" alt="" />
+                      </div>
+                      <input
+                        v-model="code"
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Code postale*"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="7"
-                  placeholder="Description de la société et de vos besoins au niveau
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="7"
+                    placeholder="Description de la société et de vos besoins au niveau
 du recouvrement."
-                ></textarea>
-              </div>
+                  ></textarea>
+                </div>
 
-              <div class="mt-4">
-                <button class="btn-yellow _block">découvrir nos offres</button>
-              </div>
-            </template>
-          </FormControl>
+                <div class="mt-4">
+                  <button class="btn-yellow _block">découvrir nos offres</button>
+                </div>
+              </template>
+            </FormControl>
+          </form>
         </div>
       </div>
     </div>
@@ -256,21 +290,60 @@ du recouvrement."
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
 import FormControl from "@/components/shared/form-control.vue";
+
+import { useVuelidate } from "@vuelidate/core";
+import { required, email } from "@vuelidate/validators";
 
 export default {
   components: { FormControl },
 
-  methods: {
-    loadMore() {
-      let loadMoreBtn = document.querySelector("#load-more-btn"),
-        items = document.querySelector(".load-more__block");
+  setup() {
+    return {
+      v$: useVuelidate(),
+    };
+  },
 
-      loadMoreBtn.onclick = (e) => {
-        e.preventDefault();
-        items.style.display = "block";
-        loadMoreBtn.style.display = "none";
-      };
+  data() {
+    return {
+      show: false,
+      lastname: "",
+      firstname: "",
+      societe: "",
+      email: "",
+      phone: "",
+      ville: "",
+      code: "",
+    };
+  },
+
+  validations() {
+    return {
+      lastname: { required },
+      firstname: { required },
+      societe: { required },
+      email: { required, email },
+      phone: { required },
+      ville: { required },
+      code: { required },
+    };
+  },
+
+  methods: {
+    async sendEmail() {
+      const isFormCorrect = await this.v$.$validate();
+
+      if (isFormCorrect) {
+        emailjs.sendForm("service_tj0w17k", "template_snasdo4", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
+          (result) => {
+            console.log("SUCCESS!", result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+      }
     },
   },
 };
@@ -316,7 +389,6 @@ span {
 
 .load-more__block {
   margin-top: 27px;
-  display: none;
 }
 
 .avanteges-item {
