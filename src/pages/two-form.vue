@@ -3,18 +3,28 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-md-10 col-lg-10 col-sm-12 offset-xl-2">
-          <form>
+          <form ref="form" @submit.prevent="sendEmail">
             <FormControl>
               <template #heading-small>
                 <h5>Un conseiller vous contactera rapidement</h5>
               </template>
 
               <template #inputs>
+                <!-- <select class="form-select" name="montant" id="pet-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="dog">Dog</option>
+                  <option value="cat">Cat</option>
+                  <option value="hamster">Hamster</option>
+                  <option value="parrot">Parrot</option>
+                  <option value="spider">Spider</option>
+                  <option value="goldfish">Goldfish</option>
+                </select> -->
                 <v-select
                   class="new-styles"
-                  :options="books"
+                  :options="one"
                   label="title"
                   placeholder="Le montant total des créances (factures impayés)"
+                  name="montant"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -32,9 +42,12 @@
                 </v-select>
                 <v-select
                   class="new-styles"
-                  :options="books"
+                  :options="two"
                   label="title"
                   placeholder="Le nombre des créances"
+                  name="nombre"
+                  v-model="nombre"
+                  :value="nombre"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -52,7 +65,7 @@
                 </v-select>
                 <v-select
                   class="new-styles"
-                  :options="books"
+                  :options="three"
                   label="title"
                   placeholder="L’ancienneté des créances"
                 >
@@ -73,7 +86,7 @@
 
                 <v-select
                   class="new-styles"
-                  :options="books"
+                  :options="geo"
                   label="title"
                   placeholder="Géolocalisation des débiteurs"
                 >
@@ -94,7 +107,7 @@
 
                 <v-select
                   class="new-styles"
-                  :options="books"
+                  :options="four"
                   label="title"
                   placeholder="Vos impayés concernent majoritairement"
                 >
@@ -178,7 +191,7 @@
                 </div>
 
                 <div class="mt-4">
-                  <button class="btn-yellow _block">Obtenir un devis</button>
+                  <button @click="sendEmail" class="btn-yellow _block">Obtenir un devis</button>
                 </div>
               </template>
             </FormControl>
@@ -190,6 +203,8 @@
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
+
 import FormControl from "@/components/shared/form-control.vue";
 
 export default {
@@ -197,15 +212,60 @@ export default {
 
   data() {
     return {
-      books: [
-        { title: "Old Man's War" },
-        { title: "The Lock Artist" },
-        { title: "HTML5" },
-        { title: "Right Ho Jeeves" },
-        { title: "The Code of the Wooster" },
-        { title: "Thank You Jeeves" },
+      nombre: "",
+
+      one: [
+        { title: "100 – 2000 euros" },
+        { title: "2000 – 5000 euros" },
+        { title: "5000 – 15000 euros" },
+        { title: "15000 – 30 000 euros" },
+        { title: "30 000 – 50 000 euros" },
+        { title: "50 000 – 100 000 euros" },
+        { title: "100 000 – 200 000 euros" },
+        { title: "200 000 - 500 000 euros" },
+        { title: "500 000 - 1 000 000 euros" },
+        { title: "1 000 000 euros +" },
       ],
+      two: [
+        { title: "1 à 4" },
+        { title: "5 à 10" },
+        { title: "11 à 30" },
+        { title: "31 à 50" },
+        { title: "50 à 100" },
+        { title: "100 +" },
+      ],
+      three: [
+        { title: "1 à 4" },
+        { title: "5 à 10" },
+        { title: "11 à 30" },
+        { title: "50 à 100" },
+        { title: "100 +" },
+      ],
+      four: [
+        { title: "1 à 45 jours" },
+        { title: "45 jours à 6 mois" },
+        { title: "6 mois – 1 an" },
+        { title: "plus que 1 an" },
+      ],
+      geo: [{ title: "France" }, { title: "Europe" }, { title: "Monde Entier" }],
     };
+  },
+
+  methods: {
+    async sendEmail() {
+      // const isFormCorrect = await this.v$.$validate();
+
+      emailjs.sendForm("service_tj0w17k", "template_lozntqd", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
+        () => {
+          this.status = "Succses";
+          this.statusShow = true;
+        },
+        () => {
+          this.status = "Failed...";
+          this.statusShow = true;
+        }
+      );
+    },
   },
 };
 </script>

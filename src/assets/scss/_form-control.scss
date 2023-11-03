@@ -56,6 +56,10 @@ textarea::placeholder {
   padding: 12px 12px 12px 12px !important;
 }
 
+.form-select {
+  margin-bottom: 16px;
+}
+
 .form-control:focus, .form-select:focus {
   box-shadow: none !important;
 }

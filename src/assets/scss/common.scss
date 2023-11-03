@@ -7,6 +7,13 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 100px;
+
+    @include phone {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 20px;
+      line-height: 50px;
+    }
   }
 
   h2 {
@@ -124,6 +131,11 @@
     font-size: 56px !important;
     font-weight: 700 !important;
     line-height: 84px !important;
+
+    @include tablet-up {
+      font-size: 48px !important;
+      line-height: 55px !important;
+    }
   }
 
   p {

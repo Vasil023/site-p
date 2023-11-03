@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-xxl">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <router-link class="navbar-brand" to="/">
           <img src="@/assets/img/logo.png" alt="" />
@@ -109,7 +109,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  watch: {
+    $route() {
+      const menu = document.querySelector(".collapse");
+
+      menu.classList.remove("show");
+    },
+  },
+};
 </script>
 
 <style lang="scss">
