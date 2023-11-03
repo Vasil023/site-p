@@ -57,6 +57,10 @@ export default {};
       text-underline-offset: 8px;
     }
   }
+
+  @include phone {
+    padding: 16px;
+  }
 }
 
 .link {

@@ -143,6 +143,8 @@
           </div>
         </div>
 
+        <AppSnackbar :status="status" :statusShow="statusShow" />
+
         <div class="col-xl-5 col-md-12 col-lg-5 offset-xl-1 bg">
           <form ref="form" @submit.prevent="sendEmail">
             <FormControl>
@@ -168,6 +170,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Nom*"
+                        name="name"
                       />
                     </div>
                   </div>
@@ -183,6 +186,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Prénom*"
+                        name="lastname"
                       />
                     </div>
                   </div>
@@ -199,6 +203,7 @@
                       class="form-control"
                       id="autoSizingInputGroup"
                       placeholder="Société*"
+                      name="societe"
                     />
                   </div>
                 </div>
@@ -215,6 +220,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="E-mail*"
+                        name="email"
                       />
                     </div>
                   </div>
@@ -230,6 +236,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Téléphone*"
+                        name="phone"
                       />
                     </div>
                   </div>
@@ -247,6 +254,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Ville*"
+                        name="ville"
                       />
                     </div>
                   </div>
@@ -262,6 +270,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Code postale*"
+                        name="code"
                       />
                     </div>
                   </div>
@@ -274,6 +283,7 @@
                     rows="7"
                     placeholder="Description de la société et de vos besoins au niveau
 du recouvrement."
+                    name="message"
                   ></textarea>
                 </div>
 
@@ -291,13 +301,14 @@ du recouvrement."
 
 <script>
 import emailjs from "@emailjs/browser";
-import FormControl from "@/components/shared/form-control.vue";
-
 import { useVuelidate } from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 
+import FormControl from "@/components/shared/form-control.vue";
+import AppSnackbar from "@/components/shared/app-snackbar.vue";
+
 export default {
-  components: { FormControl },
+  components: { FormControl, AppSnackbar },
 
   setup() {
     return {
@@ -315,6 +326,8 @@ export default {
       phone: "",
       ville: "",
       code: "",
+      status: "",
+      statusShow: false,
     };
   },
 
@@ -336,11 +349,13 @@ export default {
 
       if (isFormCorrect) {
         emailjs.sendForm("service_tj0w17k", "template_snasdo4", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
-          (result) => {
-            console.log("SUCCESS!", result.text);
+          () => {
+            this.status = "Succses";
+            this.statusShow = true;
           },
-          (error) => {
-            console.log("FAILED...", error.text);
+          () => {
+            this.status = "Failed...";
+            this.statusShow = true;
           }
         );
       }
