@@ -26,6 +26,10 @@
 import nosServices from "@/components/HomePage/nos-services.vue";
 import NosExperts from "@/components/shared/Nos-experts.vue";
 export default {
+  head: {
+    title: "Nos services",
+  },
+
   components: { nosServices, NosExperts },
 };
 </script>

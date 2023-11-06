@@ -84,6 +84,10 @@
 <script>
 import NosExperts from "@/components/shared/Nos-experts.vue";
 export default {
+  head: {
+    title: "A propos de nous",
+  },
+
   components: { NosExperts },
 };
 </script>

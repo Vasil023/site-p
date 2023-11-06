@@ -78,6 +78,10 @@
 <script>
 import NosExperts from "@/components/shared/Nos-experts.vue";
 export default {
+  head: {
+    title: "Recouvrement amiable",
+  },
+
   components: { NosExperts },
 };
 </script>

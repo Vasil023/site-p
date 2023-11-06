@@ -28,7 +28,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: "Offres d’emploi",
+  },
+};
 </script>
 
 <style lang="scss" scoped>

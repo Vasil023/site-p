@@ -50,6 +50,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "Formation",
+  },
+
   components: { NosExperts },
 };
 </script>

@@ -308,6 +308,10 @@ import FormControl from "@/components/shared/form-control.vue";
 import AppSnackbar from "@/components/shared/app-snackbar.vue";
 
 export default {
+  head: {
+    title: "Nos tarifs",
+  },
+
   components: { FormControl, AppSnackbar },
 
   setup() {

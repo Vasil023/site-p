@@ -2,8 +2,8 @@
   <section class="wrapper-box">
     <div class="box">
       <p>Nos experts sont là pour vous aider</p>
-      <span class="link">Contactez-nous à l’aide de </span>
-      <span>notre formulaire de contact</span>
+      <span>Contactez-nous à l’aide de </span>
+      <span class="link">notre formulaire de contact</span>
       <span>ou en nous appelant au <a href="tel:04 78 02 97 70">04 78 02 97 70</a></span>
       <div class="d-flex gap-2 justify-content-center flex-wrap">
         <span>Vous pouvez aussi </span>
@@ -66,7 +66,7 @@ export default {};
 .link {
   color: $purple;
   text-decoration-line: underline;
-  text-transform: lowercase;
+  // text-transform: lowercase;
   font-weight: 600 !important;
 }
 </style>

@@ -68,6 +68,10 @@
 <script>
 import NosExperts from "@/components/shared/Nos-experts.vue";
 export default {
+  head: {
+    title: "Pré relance commerciale",
+  },
+
   components: { NosExperts },
 };
 </script>

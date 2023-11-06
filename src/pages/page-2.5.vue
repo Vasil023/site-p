@@ -74,6 +74,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "Gestion des défaillances",
+  },
+
   components: { NosExperts },
 };
 </script>

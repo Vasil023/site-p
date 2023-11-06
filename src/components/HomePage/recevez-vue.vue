@@ -2,10 +2,13 @@
   <section class="recevez">
     <div class="container">
       <div class="recevez-top">
-        <h1>Recevez un audit gratuit de votre poste clients</h1>
+        <h1>
+          Recevez un audit gratuit <br />
+          de votre poste clients
+        </h1>
         <p>
-          GAYSSOT est là pour vous accompagner dans la gestion de votre poste clients et vous propose un audit
-          gratuit sans aucun engagement
+          GAYSSOT est là pour vous accompagner dans la gestion de votre poste <br />
+          clients et vous propose un audit gratuit sans aucun engagement
         </p>
       </div>
 
@@ -43,6 +46,15 @@ export default {};
 @import "@/assets/scss/mixin.scss";
 .recevez {
   padding: 80px 0;
+
+  h1 {
+    margin-bottom: 30px;
+    line-height: 80px;
+
+    @include phone {
+      line-height: 60px !important;
+    }
+  }
 
   p {
     font-size: 32px;

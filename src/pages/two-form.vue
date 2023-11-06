@@ -208,6 +208,10 @@ import emailjs from "@emailjs/browser";
 import FormControl from "@/components/shared/form-control.vue";
 
 export default {
+  head: {
+    title: "Audit",
+  },
+
   components: { FormControl },
 
   data() {

@@ -49,6 +49,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "Médiation",
+  },
+
   components: { NosExperts },
 };
 </script>
