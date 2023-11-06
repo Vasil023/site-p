@@ -74,7 +74,7 @@ export default {};
 @import "@/assets/scss/variables.scss";
 
 footer {
-  background: #309;
+  background: #7300ff;
   padding: 74px 0;
 
   h4 {

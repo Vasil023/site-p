@@ -61,6 +61,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "RSE",
+  },
+
   components: { NosExperts },
 };
 </script>

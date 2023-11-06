@@ -66,6 +66,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "Audit conseils",
+  },
+
   components: { NosExperts },
 };
 </script>

@@ -94,13 +94,14 @@
               <router-link class="nav-link" :to="{ name: 'faq' }">FAQ </router-link>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
-            </li>
+            </li> -->
           </ul>
           <div class="d-flex gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
             <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">Devis gratuit</router-link>
+            <router-link class="btn-purple" to="/page-2-2">Espace client </router-link>
           </div>
         </div>
       </div>

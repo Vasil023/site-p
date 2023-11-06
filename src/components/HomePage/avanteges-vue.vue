@@ -14,7 +14,7 @@
               <div class="avanteges-content">
                 <p>90% recouvré à l’amiable</p>
                 <span
-                  >90% des factures sont recouvrées à l’amiable tout en préservant la relation client;</span
+                  >90% des factures sont recouvrées à l’amiable tout en préservant la relation client.</span
                 >
               </div>
             </li>
@@ -22,7 +22,7 @@
               <div class="avanteges-icon"><img src="@/assets/img/avantages/2.svg" alt="icon" /></div>
               <div class="avanteges-content">
                 <p>0 frais de dossier</p>
-                <span>Nous appliquons un taux d’honoraire % uniquement sur les sommes encaissées;</span>
+                <span>Nous appliquons un taux d’honoraire % uniquement sur les sommes encaissées.</span>
               </div>
             </li>
             <li class="avanteges-item">
@@ -65,7 +65,7 @@
                   <span
                     >Nos ressources et moyens IT modulaires permettent une connexion simple et sur-mesure
                     entre notre ERP et les applicatifs métiers de nos clients afin d’assurer des gros volumes
-                    de factures ( 1 300 000 factures traitées en un an)</span
+                    de factures (1 300 000 factures traitées en un an).</span
                   >
                 </div>
               </li>
@@ -104,7 +104,7 @@
                 </div>
               </li>
               <li id="hide-more-btn">
-                <button @click="hideMore" class="btn-purple _block">moins d'avantages de Gaisot</button>
+                <button @click="hideMore" class="btn-purple _block">moins d'avantages de GAYSSOT</button>
               </li>
             </ul>
           </div>

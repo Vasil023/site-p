@@ -4,14 +4,13 @@
     <section class="first-screen">
       <div class="overlay"></div>
       <div class="container">
-        <div class="first-screen-content col-xl-11">
+        <div class="first-screen-content col-xl-12">
           <h1 class="heading-title">
-            Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches À
+            Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches à
             valeur ajoutée
           </h1>
           <p>
-            Faites-vous payer en phase amiable en 60 jours jusqu’à 90% de vos factures impayées grâce à
-            GAYSSOT RECOUVREMENT
+            Faites-vous payer à l’amiable jusqu'à 90% de vos factures impayées grâce à GAYSSOT RECOUVREMENT
           </p>
         </div>
 
@@ -43,8 +42,9 @@
         <div class="container">
           <div class="_border vous">
             <div class="heading">Vous avez une question?</div>
-            <div class="subtitle _border-bottom">
-              Contactez-nous à l’aide de <strong>notre formulaire de contact</strong>
+            <div class="subtitle">
+              Contactez-nous à l’aide de <br />
+              <strong class="_border-bottom">notre formulaire de contact</strong>
             </div>
             <div class="subtitle">ou en nous appelant au</div>
 
@@ -72,6 +72,10 @@ import reviewsSlider from "@/components/HomePage/reviews-slider.vue";
 import socialMedia from "@/components/HomePage/social-media.vue";
 
 export default {
+  head: {
+    title: "Gayssot",
+  },
+
   components: {
     nosServices,
     avantegesVue,
@@ -98,6 +102,13 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
+
+  p {
+    line-height: 42px;
+    font-weight: 300;
+    // padding-right: 150px;
+    letter-spacing: 1.6px;
+  }
 }
 .overlay {
   position: absolute;

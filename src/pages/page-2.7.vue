@@ -57,6 +57,10 @@
 import NosExperts from "@/components/shared/Nos-experts.vue";
 
 export default {
+  head: {
+    title: "Créances à l'international",
+  },
+
   components: { NosExperts },
 };
 </script>
