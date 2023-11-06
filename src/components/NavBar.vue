@@ -98,7 +98,7 @@
               <router-link class="nav-link" to="/page-2-2">Espace client </router-link>
             </li> -->
           </ul>
-          <div class="d-flex gap-3" role="search">
+          <div class="d-flex flex-sm-row flex-column gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
             <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">Devis gratuit</router-link>
             <router-link class="btn-purple" to="/page-2-2">Espace client </router-link>
@@ -161,6 +161,10 @@ nav {
   font-size: 12px !important;
   line-height: 16.002px !important; /* 114.3% */
   letter-spacing: 1.4px !important;
+
+  @include phone {
+    font-size: 16px !important;
+  }
 }
 
 .dropdown-menu {
