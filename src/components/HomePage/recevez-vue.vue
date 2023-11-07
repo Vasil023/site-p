@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="recevez-btn">
-        <a href="#" class="btn-yellow">Demander un devis</a>
+        <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">DEMANDEZ UN AUDIT</router-link>
       </div>
     </div>
   </section>

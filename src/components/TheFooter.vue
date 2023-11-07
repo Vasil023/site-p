@@ -33,10 +33,11 @@
               <h4>Gayssot Recouvrement</h4>
               <ul>
                 <li>
-                  <span>51 Ter Rue de Saint Cyr - 69009 LYON 04</span>
+                  <span>51 Ter Rue de Saint Cyr - 69009 LYON</span>
                 </li>
                 <li>
-                  <span>78 02 97 70</span>
+                  <!-- <span>04 78 02 97 70</span> -->
+                  <a href="tel:04 78 02 97 70">+33 478 02 97 70</a>
                 </li>
                 <li>
                   <span>contact@gayssot-recouvrement.com </span>
@@ -49,13 +50,17 @@
               <h4>Des questions ?</h4>
               <ul>
                 <li>
-                  <p>Prenons rdv pour échanger !</p>
+                  <router-link :to="{ name: 'NosTarifs' }">
+                    <p>Prenons rdv pour échanger!</p>
+                  </router-link>
                 </li>
                 <li>
                   <h4>Nous rejoindre ?</h4>
                 </li>
                 <li>
-                  <p>On recrute !</p>
+                  <router-link :to="{ name: 'Page7' }">
+                    <p>On recrute!</p>
+                  </router-link>
                 </li>
               </ul>
             </div>
@@ -111,6 +116,12 @@ footer {
     line-height: 42px;
     letter-spacing: 1.4px;
     margin-bottom: 0;
+  }
+}
+
+.social-content {
+  a {
+    color: white;
   }
 }
 </style>
