@@ -14,20 +14,21 @@
         :modules="modules"
         class="mySwiper swiper-propertis swiper-container"
       >
-        <swiper-slide v-for="i in 9" :key="i">
+        <swiper-slide v-for="(item, i) in reviews" :key="i">
           <div class="slide-top">
             <div>
-              <p>L’Oréal Paris</p>
-              <span>Wilmer Alexander Directeur financier</span>
+              <p>{{ item.name }}</p>
+              <span>{{ item.label }}</span>
             </div>
           </div>
 
           <div class="slide-title">
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt, explicabo.
+              {{ item.review }}
             </p>
+          </div>
+          <div class="slide-data">
+            {{ item.date }}
           </div>
         </swiper-slide>
       </swiper>
@@ -57,6 +58,7 @@ export default {
     Swiper,
     SwiperSlide,
   },
+
   setup() {
     const prev = ref(null);
     const next = ref(null);
@@ -66,12 +68,80 @@ export default {
       next,
     };
   },
+
+  data() {
+    return {
+      reviews: [
+        {
+          name: "Madame Arlène Jacomo",
+          label: "Responsable comptabilité clients - Société TransPloExpress",
+          review:
+            "Bonjour, Gayssot est une société que je recommande pour son professionnalisme et sa rigueur.Ils m'accompagnent dans le recouvrement de créances dont je n’espérais plus l’encaissement Les équipes sont sérieuses et à l’écoute. Merci",
+          date: "Mai 2023",
+        },
+        {
+          name: "Monsieur Paul Vermotant",
+          label: "Directeur comptable - Société Créativie Lab",
+          review:
+            "Bonjour, La société Gayssot m’a réconcilié avec le monde du recouvrement. Ils ont respecté leur engagement tout en préservant le lien commercial que j’entretenais avec mes clients depuis de nombreuses années. Un savoir-faire et du tact. Bonne journée",
+          date: "Mai 2023",
+        },
+        {
+          name: "Madame Marie Frioule",
+          label: "comptable - Société RevoTechnic",
+          review:
+            "Bonjour, Je félicite Gayssot Recouvrement pour avoir réussi là où j’avais échoué. Une expérience et une expertise qui permettent d’obtenir de très bons résultats. Excellente journée",
+          date: "Juin 2023",
+        },
+        {
+          name: "Madame Françoise Béraud",
+          label: "Directrice financière - B.R.C.G  SA",
+          review:
+            "Bonjour, La société Gayssot m’aide à améliorer certains indicateurs financiers grâce à des opérations ponctuelles de nettoyage de ma balance âgée. Ils ont su parfaitement suppléer mon personnel manquant. J’ai pu optimiser mes résultats et gérer mes problèmes RH. Je le referai sans problème. Bien cordialement",
+          date: "Juin 2023",
+        },
+        {
+          name: "Monsieur Jean-Jacques Perron",
+          label: "DSI - ETI du monde du transport & logistique",
+          review:
+            "Bonjour, Je tiens à féliciter les équipes Gayssot ainsi que leur infrastructure informatique qui m’ont permis d’externaliser le recouvrement en l’intégrant à mes outils internes et en supportant de très gros volumes de transactions. Professionnels et réactifs. Bravo",
+          date: "Juillet 2023",
+        },
+        {
+          name: "Madame Marie-Claude Genevais",
+          label: "DAF - Acteur majeur dans le monde paramédical",
+          review:
+            "Bonjour, Après de nombreuses relances internes infructueuses et chronophages, nous avons décidé de sous-traiter ces tâches à un spécialiste. Nous avons bien fait de choisir la société Gayssot pour leur écoute, leur réactivité, leurs résultats et leur éthique. Nous les recommandons. Bonne journée",
+          date: "Juillet 2023",
+        },
+        {
+          name: "Monsieur Pierre Graveleux",
+          label: "Dirigeant PME dans le secteur industriel",
+          review:
+            "Bonjour, Fragilisés par un nombre d’impayés grossissant et une relation commerciale se dégradant, nous avons fait le choix de prendre la société Gayssot pour se charger de notre recouvrement. Ils ont su trouver les solutions adéquates et épargner les relations commerciales avec mes clients. Encore merci Cordialement",
+          date: "Juillet 2023",
+        },
+        {
+          name: "Monsieur Emmanuel Fonteblois",
+          label: "Credit manager - ETI dans le secteur du BTP",
+          review:
+            "Bonjour, L’expertise et l’adaptabilité de leurs outils informatiques satisfont l’ensemble de nos équipes internes. Une vraie collaboration entre nos équipes. Des résultats au-delà de nos espérances et une vraie diplomatie dans la tonalité. Très bonne journée!",
+          date: "Juillet 2023",
+        },
+        {
+          name: "Monsieur Bertrand Giovanni",
+          label: "Dirigeant - PME dans le secteur du transport",
+          review:
+            "Bonjour, J’ai bénéficié, pour un dossier très sensible (gros montant de créance et client stratégique), de l’excellent travail d’un Médiateur judiciaire de chez Gayssot. Nous avons trouvé un arrangement et mes liens se sont renforcés avec mon client. Je recommande la Médiation. Bonne journée",
+          date: "Août 2023",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/variables.scss";
-@import "@/assets/scss/mixin.scss";
 .swiper-overflow-container {
   overflow-x: hidden;
 
@@ -159,6 +229,8 @@ export default {
   box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
   padding: 12px 16px;
   max-width: 295px;
+  height: auto;
+  position: relative;
 }
 
 .slide-top {
@@ -178,8 +250,12 @@ export default {
   }
 
   span {
-    font-size: rem(14);
+    font-size: rem(13);
     font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+    display: block;
   }
 }
 
@@ -192,6 +268,16 @@ export default {
     line-height: 24px !important; /* 150% */
     letter-spacing: 1.4px;
   }
+}
+
+.slide-data {
+  text-align: end;
+  font-size: 14px;
+  color: #404040;
+  letter-spacing: 1.4px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
 }
 
 .box-btn {

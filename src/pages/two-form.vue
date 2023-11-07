@@ -107,9 +107,30 @@
 
                 <v-select
                   class="new-styles"
-                  :options="four"
+                  :options="five"
                   label="title"
                   placeholder="Vos impayés concernent majoritairement"
+                >
+                  <template #open-indicator="{ attributes }">
+                    <span v-bind="attributes"
+                      ><svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M7 10L12 15L17 10H7Z" fill="black" />
+                      </svg>
+                    </span>
+                  </template>
+                </v-select>
+
+                <v-select
+                  class="new-styles"
+                  :options="four"
+                  label="title"
+                  placeholder="L’ancienneté des créances"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -250,6 +271,11 @@ export default {
         { title: "45 jours à 6 mois" },
         { title: "6 mois – 1 an" },
         { title: "plus que 1 an" },
+      ],
+      five: [
+        { title: "Des particuliers" },
+        { title: "Des professionnels" },
+        { title: "Autant des particuliers que des professionnels" },
       ],
       geo: [{ title: "France" }, { title: "Europe" }, { title: "Monde Entier" }],
     };

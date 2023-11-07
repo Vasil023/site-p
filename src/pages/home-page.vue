@@ -6,7 +6,7 @@
       <div class="container">
         <div class="first-screen-content col-xl-12">
           <h1 class="heading-title">
-            Déléguez vos pré-relances et vos relances de factures impayées,concentrez-vous sur vos tâches à
+            Déléguez vos pré-relances et vos relances de factures impayées, concentrez-vous sur vos tâches à
             valeur ajoutée
           </h1>
           <p>
@@ -14,7 +14,7 @@
           </p>
         </div>
 
-        <a href="#" class="btn-yellow">demander un devis</a>
+        <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">demander un devis</router-link>
       </div>
     </section>
 

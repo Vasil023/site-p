@@ -101,7 +101,7 @@
           <div class="d-flex flex-sm-row flex-column gap-3" role="search">
             <a href="#" class="btn-purple">Payer en ligne</a>
             <router-link :to="{ name: 'TwoForm' }" class="btn-yellow">Devis gratuit</router-link>
-            <router-link class="btn-purple" to="/page-2-2">Espace client </router-link>
+            <a class="btn-purple" href="https://gayssot-recouvrement.gircnet.com/">Espace client </a>
           </div>
         </div>
       </div>

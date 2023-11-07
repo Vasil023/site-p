@@ -6,10 +6,10 @@
           <h3>Des solutions <span>GAYSSOT</span> qui s’adaptent à vos besoins</h3>
           <p>
             Vous souhaitez échanger avec l’un de nos conseillers sur vos problématiques, obtenir des conseils
-            personnalisés pour enfin obtenir au plus bref délai le règlement de vos impayées ?
+            personnalisés pour enfin obtenir dans les meilleurs délais le règlement de vos impayés?
           </p>
           <p>
-            Vous pensez à faire appel à un Credit Manager externalisé pour la gestion de votre poste clients ?
+            Vous pensez à faire appel à un Credit Manager externalisé pour la gestion de votre poste clients?
           </p>
           <ul>
             <li>
