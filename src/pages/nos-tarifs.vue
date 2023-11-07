@@ -137,7 +137,7 @@
                 </div>
               </li>
               <li>
-                <button class="btn-purple _block" @click="show = false">moins d'avantages de Gaisot</button>
+                <button class="btn-purple _block" @click="show = false">moins d'avantages de GAYSSOT</button>
               </li>
             </ul>
           </div>
