@@ -44,7 +44,9 @@
             <div class="heading">Vous avez une question?</div>
             <div class="subtitle">
               Contactez-nous à l’aide de <br />
-              <strong class="_border-bottom">notre formulaire de contact</strong>
+              <router-link :to="{ name: 'NosTarifs' }">
+                <strong class="_border-bottom">notre formulaire de contact</strong>
+              </router-link>
             </div>
             <div class="subtitle">ou en nous appelant au</div>
 
@@ -141,6 +143,16 @@ export default {
     .btn-yellow {
       margin-top: 30px;
     }
+  }
+}
+
+.subtitle {
+  strong {
+    color: $black;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

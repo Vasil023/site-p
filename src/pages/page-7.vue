@@ -24,14 +24,20 @@
         </p>
       </div>
     </section>
+
+    <ExpertsVue />
   </div>
 </template>
 
 <script>
+import ExpertsVue from "@/components/shared/Experts-vue.vue";
+
 export default {
   head: {
     title: "Offres d’emploi",
   },
+
+  components: { ExpertsVue },
 };
 </script>
 
