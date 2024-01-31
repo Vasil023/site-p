@@ -40,7 +40,7 @@
 
     <section class="r-list pt-3">
       <div class="container">
-        <h5>Le recouvrement amiable en marque blanche</h5>
+        <h5>Le recouvrement amiable en nom propre</h5>
 
         <ul>
           <li>La création d’un choc psychologique auprès du débiteur et un changement de phase;</li>
@@ -115,7 +115,7 @@ export default {
       position: relative;
       padding-left: 30px;
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 40px;
       font-weight: 400;
 
