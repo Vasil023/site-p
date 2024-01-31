@@ -22,7 +22,7 @@
         </p>
 
         <div class="content">
-          <h3 class="pe-4">NOTRE ZONE D’INTERVENTION POUR LA GESTION DE VOTRE POSTE CLIENTS</h3>
+          <h3 class="pe-4">Notre zone d’intervention pour la gestion de votre poste clients</h3>
 
           <p>
             Avec toujours pour objectif d'améliorer la santé financière de votre entreprise par une meilleure

@@ -13,7 +13,8 @@
     <div class="container">
       <section>
         <p>
-          <strong>Votre</strong> <a href="#" class="_link"> recouvrement amiable</a>&nbsp;
+          <strong>Votre</strong>
+          <router-link :to="{ name: 'Page22' }" class="_link"> recouvrement amiable</router-link>&nbsp;
           <strong>n’a pas abouti?</strong>
         </p>
         <p class="mt-5">
@@ -24,8 +25,8 @@
       </section>
 
       <section class="mt-6 a-bg">
-        <h2>Le Recouvrement judiciaire</h2>
-        <h3 class="mt-4">Vos besoins / nos engagements:</h3>
+        <h3>Le Recouvrement judiciaire</h3>
+        <h5 class="mt-4">Vos besoins / nos engagements:</h5>
 
         <ul class="list">
           <li>Expertise juridique de votre secteur;</li>

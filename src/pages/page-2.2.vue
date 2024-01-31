@@ -27,8 +27,8 @@
 
     <section class="r-list mt-5 pt-3">
       <div class="container">
-        <h2>Deux options:</h2>
-        <h3>Le recouvrement amiable en marque blanche</h3>
+        <h3 class="pb-3">Deux options:</h3>
+        <h5>Le recouvrement amiable en marque blanche</h5>
 
         <ul>
           <li>Le principe du mimétisme de vos process tel un “caméléon”;</li>
@@ -40,7 +40,7 @@
 
     <section class="r-list pt-3">
       <div class="container">
-        <h3>Le recouvrement amiable en marque blanche</h3>
+        <h5>Le recouvrement amiable en marque blanche</h5>
 
         <ul>
           <li>La création d’un choc psychologique auprès du débiteur et un changement de phase;</li>
@@ -51,7 +51,7 @@
 
     <section class="r-list mt-5 pt-3">
       <div class="container">
-        <h2>Vos besoins / nos engagements:</h2>
+        <h3>Vos besoins / nos engagements:</h3>
 
         <ul>
           <li>Baisse du délai moyen de paiement;</li>
@@ -102,7 +102,7 @@ export default {
 }
 
 .r-list {
-  h2 {
+  h3 {
     font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 10px;

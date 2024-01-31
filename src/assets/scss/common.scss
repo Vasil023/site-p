@@ -7,6 +7,7 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 100px;
+    margin-bottom: 0.8rem !important;
 
     @include phone {
       font-size: 45px;
@@ -18,48 +19,52 @@
 
   h2 {
     font-size: 48px;
-    font-weight: 700;
-    line-height: 80px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 0.8rem !important;
 
     @include phone {
       font-size: 30px;
-      font-weight: 700;
-      line-height: 42px;
+      font-weight: 500;
+      line-height: 32px;
     }
   }
 
   h3 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
+    font-size: 40px !important;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 0.8rem !important;
 
     @include phone {
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 30px;
     }
   }
 
   h4 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 36px;
+    margin-bottom: 0.8rem !important;
 
     @include phone {
       font-size: 22px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 18px;
     }
   }
 
   h5 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 26px;
+    margin-bottom: 0.8rem !important;
 
     @include phone {
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 14px;
     }
   }
@@ -186,7 +191,7 @@
 }
 
 .content {
-  padding-top: 60px;
+  padding-top: 40px;
 
   @include phone {
     padding-top: 30px;
@@ -343,7 +348,7 @@ body {
 }
 
 .list {
-  margin-top: 16px;
+  // margin-top: 16px;
   list-style-type: disc;
   padding-left: 20px;
 
