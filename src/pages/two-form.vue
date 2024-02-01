@@ -3,6 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-md-10 col-lg-10 col-sm-12 offset-xl-2">
+          <AppSnackbar :status="status" :statusShow="statusShow" />
           <form ref="form" @submit.prevent="sendEmail">
             <FormControl>
               <template #heading-small>
@@ -10,21 +11,13 @@
               </template>
 
               <template #inputs>
-                <!-- <select class="form-select" name="montant" id="pet-select">
-                  <option value="">--Please choose an option--</option>
-                  <option value="dog">Dog</option>
-                  <option value="cat">Cat</option>
-                  <option value="hamster">Hamster</option>
-                  <option value="parrot">Parrot</option>
-                  <option value="spider">Spider</option>
-                  <option value="goldfish">Goldfish</option>
-                </select> -->
                 <v-select
                   class="new-styles"
                   :options="one"
                   label="title"
                   placeholder="Le montant total des créances (factures impayés)"
                   name="montant"
+                  v-model="form.oneSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -40,14 +33,14 @@
                     </span>
                   </template>
                 </v-select>
+
                 <v-select
                   class="new-styles"
                   :options="two"
                   label="title"
                   placeholder="Le nombre des créances"
                   name="nombre"
-                  v-model="nombre"
-                  :value="nombre"
+                  v-model="form.twoSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -63,11 +56,13 @@
                     </span>
                   </template>
                 </v-select>
+
                 <v-select
                   class="new-styles"
                   :options="three"
                   label="title"
                   placeholder="L’ancienneté des créances"
+                  v-model="form.threeSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -89,6 +84,7 @@
                   :options="geo"
                   label="title"
                   placeholder="Géolocalisation des débiteurs"
+                  v-model="form.geoSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -110,6 +106,7 @@
                   :options="five"
                   label="title"
                   placeholder="Vos impayés concernent majoritairement"
+                  v-model="form.fiveSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -131,6 +128,7 @@
                   :options="four"
                   label="title"
                   placeholder="L’ancienneté des créances"
+                  v-model="form.fourSelect"
                 >
                   <template #open-indicator="{ attributes }">
                     <span v-bind="attributes"
@@ -153,7 +151,13 @@
                       <div class="input-group-text">
                         <img src="@/assets/img/form-icon/1.svg" alt="" />
                       </div>
-                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Nom*" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="Nom*"
+                        v-model="form.firstName"
+                      />
                     </div>
                   </div>
 
@@ -167,6 +171,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Prénom*"
+                        v-model="form.lastName"
                       />
                     </div>
                   </div>
@@ -177,7 +182,13 @@
                     <div class="input-group-text">
                       <img src="@/assets/img/form-icon/email.svg" alt="" />
                     </div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="E-mail" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="autoSizingInputGroup"
+                      placeholder="E-mail"
+                      v-model="form.email"
+                    />
                   </div>
                 </div>
 
@@ -192,6 +203,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Téléphone"
+                        v-model="form.phone"
                       />
                     </div>
                   </div>
@@ -206,6 +218,7 @@
                         class="form-control"
                         id="autoSizingInputGroup"
                         placeholder="Code postale"
+                        v-model="form.code"
                       />
                     </div>
                   </div>
@@ -227,17 +240,33 @@
 import emailjs from "@emailjs/browser";
 
 import FormControl from "@/components/shared/form-control.vue";
+import AppSnackbar from "@/components/shared/app-snackbar.vue";
 
 export default {
   head: {
     title: "Audit",
   },
 
-  components: { FormControl },
+  components: { FormControl, AppSnackbar },
 
   data() {
     return {
-      nombre: "",
+      form: {
+        oneSelect: "",
+        twoSelect: "",
+        threeSelect: "",
+        fourSelect: "",
+        fiveSelect: "",
+        geoSelect: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        code: "",
+      },
+
+      status: "",
+      statusShow: false,
 
       one: [
         { title: "100 – 2000 euros" },
@@ -285,10 +314,24 @@ export default {
     async sendEmail() {
       // const isFormCorrect = await this.v$.$validate();
 
-      emailjs.sendForm("service_tj0w17k", "template_lozntqd", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
+      emailjs.send("service_tj0w17k", "template_lozntqd", this.form, "3GWjYFwkLF6J2iUTs").then(
         () => {
           this.status = "Succses";
           this.statusShow = true;
+
+          setTimeout(() => {
+            (this.form.oneSelect = ""),
+              (this.form.twoSelect = ""),
+              (this.form.threeSelect = ""),
+              (this.form.fourSelect = ""),
+              (this.form.fiveSelect = ""),
+              (this.form.geoSelect = ""),
+              (this.form.lastName = ""),
+              (this.form.firstName = ""),
+              (this.form.email = ""),
+              (this.form.phone = ""),
+              (this.form.code = "");
+          }, 1000);
         },
         () => {
           this.status = "Failed...";

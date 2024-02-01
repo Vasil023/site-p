@@ -352,11 +352,23 @@ export default {
       const isFormCorrect = await this.v$.$validate();
 
       if (isFormCorrect) {
-        emailjs.sendForm("service_tj0w17k", "template_snasdo4", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
+        emailjs.send("service_tj0w17k", "template_snasdo4", this.$refs.form, "3GWjYFwkLF6J2iUTs").then(
           () => {
             this.status = "Succses";
-            this.statusShow = true;
+
+            setTimeout(() => {
+              //Clear inputs
+              this.lastname = "";
+              this.firstname = "";
+              this.societe = "";
+              this.email = "";
+              this.phone = "";
+              this.ville = "";
+              this.code = "";
+              this.statusShow = true;
+            }, 1000);
           },
+
           () => {
             this.status = "Failed...";
             this.statusShow = true;
