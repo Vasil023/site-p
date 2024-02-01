@@ -55,15 +55,15 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="container">
         <div class="video"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="valeurs-wrapper">
       <div class="container">
-        <h2>Nos valeurs:</h2>
+        <h3>Nos valeurs:</h3>
         <div class="valeurs-items">
           <div class="valeurs-item">RÉACTIVITÉ</div>
           <div class="valeurs-item">ÉTHIQUE</div>
