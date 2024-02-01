@@ -25,7 +25,7 @@
           <strong>spécialistes qualifiés</strong> et expérimentés.
         </p>
 
-        <h2>Formation recouvrement intra entreprise et formation inter entreprise.</h2>
+        <h3>Formation recouvrement intra entreprise et formation inter entreprise.</h3>
         <p>
           Fort de notre expérience en gestion du poste client, Gayssot Recouvrement met à disposition des
           entreprises et de leurs salariés des formations continues permettant à leurs collaborateurs de se
